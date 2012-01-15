@@ -1,0 +1,50 @@
+!!! 5
+html
+  head
+    meta(charset='utf-8')
+    title= title
+    != css('styles')
+    != js('modernizr')
+  body
+    div.navbar.navbar-fixed-top
+      div.navbar-inner
+        div.container
+          i.lci-logo
+          a.btn.btn-navbar(data-toggle='collapse', data-target='nav-collapse')
+          a.brand(href='/') Lighthouse Chapel International - New Zealand
+          div.nav-collapse.collapse
+            ul.nav
+              li.active
+                a(href='/')
+                  i.icon-home
+                  |  Home
+              li
+                a(href='/about')
+                  i.icon-info-sign
+                  |  About Us
+              li
+                a(href='/events')
+                  i.icon-calendar
+                  |  Events
+              li
+                a(href='/contact')
+                  i.icon-user
+                  |  Contact Us
+              li.dropdown(id='media')
+                a.dropdown-toggle(data-toggle='dropdown', href='#media')
+                  i.icon-play-circle
+                  |  Media
+                ul.dropdown-menu
+                  li.dropdown(id='listen')
+                    a.dropdown-toggle(data-toggle='dropdown', href='#listen')
+                      i.icon-headphones
+                      |  Listen
+                    ul.dropdown-menu
+                      li
+                        a(href='http://www.daghewardmills.org/index.php?option=com_content&view=article&id=151&Itemid=132') Latest Message
+                        a(href='http://www.daghewardmills.org/index.php?option=com_content&view=article&id=153&Itemid=134') The Most Recent Camp
+                        a(href='http://www.daghewardmills.org/index.php?option=com_content&view=article&id=154&Itemid=135') Most Recent Conference
+                        a(href='http://www.daghewardmills.org/index.php?option=com_content&view=article&id=155&Itemid=137') 2010 Message Archive
+                        a(href='http://www.daghewardmills.org/index.php?option=com_podcast&view=feed&format=raw&Itemid=337') 2011 Messages on Podcast
+    div.container!= body
+    != js('lcinz')

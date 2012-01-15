@@ -1,0 +1,20 @@
+$navbarHeight: 70px;
+$btnPrimaryBackground: #000;
+$heroUnitBackground: #ffc40d;
+$iconSpritePath:  url("/images/glyphicons-halflings.png");
+$iconWhiteSpritePath: url("/images/glyphicons-halflings-white.png");
+
+@import "bootstrap";
+//@import "bootstrap-responsive";
+
+body {
+  padding-top: $navbarHeight;
+}
+
+div.navbar {
+  background-image: url(/images/nav-logo.jpg), url(/images/silver-fern.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, top right;
+  padding-left: 45px;
+  padding-right: 56px;
+}
