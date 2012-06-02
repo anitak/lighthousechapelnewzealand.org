@@ -1,14 +1,25 @@
+cluster = require('cluster')
 
-###
-Module dependencies.
-###
+# If this is the master process
+if cluster.isMaster
+  # Fork a new worker process per CPU core
+  cluster.fork() for [0...require('os').cpus().length]
+  # Fork a new worker process on worker death
+  cluster.on('death', (worker) ->
+    console.log("LCINZ worker #{worker.pid} died. Restarting...")
+    cluster.fork()
+  )
+  # Return early
+
+# Otherwise in the client process setup an express-based server
+
+# Module dependencies.
+
 express = require('express')
 
 app = module.exports = express.createServer()
 
-###
-Configuration.
-###
+# Configuration.
 
 app.configure(->
   app.set('views', __dirname + '/views')
@@ -31,9 +42,7 @@ app.configure('production', ->
   app.use(express.errorHandler())
 )
 
-###
-Routes.
-###
+# Routes.
 
 app.get('/', (req, res) ->
   res.render('index',
