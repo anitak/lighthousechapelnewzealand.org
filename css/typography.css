@@ -1,0 +1,18 @@
+/* Copyright (C) 2007 - 2011 YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/*
+ * headings
+ */
+
+
+h1 { color: #aaa; }
+h2 { color: #50555A; }
+h3 { color: #c8001e; }
+h4 { color: #50555A; }
+h5 { color: #c8001e; }
+h6 { color: #50555A; }
+
+
+#choices { cursor: pointer }
+td { text-align: left }
+li { list-style: none }

@@ -1,0 +1,16 @@
+#slideshow { padding: 0; width: 644px; height: 252px; }
+#show { height: 260px; }
+#slideshow img {
+     padding: 0;
+     width: 642px;
+     height: 250px;
+     border: 1px solid #ccc ;
+     position: absolute; 
+     top: 0px;
+     left: 0px;
+     display: none;
+     z-index: 9;
+     opacity: 0;
+     width: 642px;
+     height: 250px;
+ }

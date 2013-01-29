@@ -1,0 +1,99 @@
+/* Copyright (C) 2007 - 2011 YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+ 
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, input, textarea, blockquote {
+    margin: 0; 
+    padding: 0; 
+    border: 0;
+}
+
+ 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #646464;
+    font-size: 14px; 
+    line-height: 24px;
+    margin: 20px ;
+}
+
+
+.wrapper{
+    margin: 0 auto;
+}
+header {
+    width: 80%;
+    height: 150px;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+}
+header h1 {
+    text-align: center;
+}
+
+
+section {
+    width: 900;
+    clear: both;
+    z-index: 0;
+}
+section img {
+    margin: 0px auto;
+    display: block;
+}
+#slide_wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+#left_image {
+    width: 650px;
+    float: left;
+}
+#right_image {
+    margin-left: 650px;
+}
+
+footer {
+    position: relative;
+    padding-bottom: 15px;
+    clear: both;
+    text-align: center;
+}
+
+.link_box {
+     padding-right: 5px;
+     float: left;
+     margin-right: 10px;
+     height: 110px;
+     border-right: #cccccc 1px dotted;
+ }  
+ .right {
+     float: right;
+ }
+ .left {
+     float: left;
+ }
+
+.icon_img{
+    border: 0;
+    width: 95px;
+    height: 95px;
+    border-right: #cccccc 1px dotted;
+    padding-right: 5px;
+    float: left;
+    margin-right: 10px;
+  }
+.links {
+     float: left;
+ }
+.links li a {
+    text-decoration: none;
+     display: block;
+ }
+.rhs_links {
+     padding-right: 5px;
+     float: left;
+     height: 135px;
+     margin-right: 10px;
+     border-right: #cccccc 1px dotted;
+ }
